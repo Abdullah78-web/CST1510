@@ -3,7 +3,7 @@ RECORD CHECK  -  my version
 ===========================
 
 Name  : Abdullah Laghari
-Lane  :  IT      (delete two)
+Lane  :  IT      
 Date  :2 - 10 - 26
 
 Run it:   python template.py
