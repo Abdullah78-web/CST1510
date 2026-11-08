@@ -15,7 +15,7 @@ class Record:
         self.limit = limit
 
     def status(self):
-        ratio = self.value/ self.limit
+        ratio= self.value/ self.limit
         if ratio >= 1.0:
             return "OVER LIMIT"
         if ratio >= 0.9:
@@ -31,7 +31,7 @@ with open("my_data.txt", "w") as f:
     f.write("R-004,40,100\n")
 
 def load_records(path):
-    loaded = []
+    loaded= []
     with open(path) as f:
         for line in f:
             label, value, limit = line.strip().split(",")

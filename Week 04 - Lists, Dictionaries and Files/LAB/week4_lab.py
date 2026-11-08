@@ -17,7 +17,7 @@ with open("servers.txt", "w") as f:
     f.write("srv-01,87,120\nsrv-02,110,120\nsrv-03,130,120\n")
 
 def load_records(path):
-    records = []
+    records= []
     with open(path) as f:
         for line in f:
             label, value, limit = line.strip().split(",")
@@ -32,15 +32,15 @@ def check_record(record):
     return "OK"
 
 try:
-    records = load_records("servers.txt")
+    records= load_records("servers.txt")
 except FileNotFoundError:
     print("File not found")
-    records = []
+    records= []
 
-over = 0
+over= 0
 with open("results.txt", "w") as out:
     for record in records:
-        status = check_record(record)
+        status= check_record(record)
         print(record["label"], status)
         out.write(record["label"] + "," + status + "\n")
         if status == "OVER LIMIT":

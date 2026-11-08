@@ -19,8 +19,8 @@ def report_line(label, value):
     return f" {label:<12}: {value:>11}"
 
 def check(value, limit):
-    free = limit - value
-    percent = (value / limit) * 100
+    free= limit - value
+    percent= (value / limit) * 100
     return free, percent
 
 def status_of(percent):
@@ -31,12 +31,12 @@ def status_of(percent):
     else:
         return "OK"
 
-hostname = input("Hostname: ")
-used = float(input("GB used: "))
-total = float(input("GB total: "))
+hostname= input("Hostname: ")
+used= float(input("GB used: "))
+total= float(input("GB total: "))
 
 free, percent = check(used, total)
-status = status_of(percent)
+status= status_of(percent)
 
 print(border())
 print(f" RECORD CHECK  -  {hostname}")
