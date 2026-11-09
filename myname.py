@@ -1,3 +1,0 @@
-def hi(name):
-    print("Hi, how are you", name,"?" )
-    
