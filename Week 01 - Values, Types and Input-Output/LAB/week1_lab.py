@@ -68,3 +68,4 @@ print("=" * 34)
 #    [ ] Run it with a total of 0 and write the error in your journal
 #    [ ] Check every variable name says what it holds
 #    [ ] Show it to the person next to you
+
