@@ -1,4 +1,0 @@
-"""more than 80 pass
-79-41 resit 
-less 40 fail function"""
-
